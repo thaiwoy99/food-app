@@ -46,7 +46,8 @@ function Item(props) {
       </div>
     
       
-      <p className ="item-name">{props.name} . <span>{naira}{props.price.toLocaleString('en-US')}</span></p>
+      <p className ="item-name">{props.name}  </p>
+      <p className="item-price">{naira}{props.price.toLocaleString('en-US')}</p>
       
       
       {props.amountOrdered < 1 && <button className="add-before-1" onClick={incr}>ADD</button>}

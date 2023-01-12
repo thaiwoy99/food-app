@@ -7,11 +7,11 @@ function ContextProvider({children}){
     const [OrderedItems ,setOrderedItems] = useState([])
     const [page, setPage] = useState(false)
     const naira =getSymbolFromCurrency("NGN")
-    console.log(naira)
+    
 
     const [ord,setOrd] = useState()
     
-   // console.log(OrderedItems)
+   
 
    function ChangePage(){
     setPage(prev=>!prev)
@@ -53,7 +53,7 @@ function ContextProvider({children}){
         })
 
     }
-    console.log(Foods)
+    
 
     function add(id,){
         setFoods(prev=>prev.map(i=>{
