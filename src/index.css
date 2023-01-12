@@ -10,25 +10,28 @@ body,p,h2{
 .item {
     
     position: relative;
+    
 }
 
 .item-name{
     
     font-size:0.8rem;
-    margin-bottom: 0.8rem 0;
+    margin-bottom: 1.5rem 0;
     font-weight: 700;
     text-align: center;
     position: absolute;
     top:50%;
+    
     
 
     
     
 }
 .item-price {
-    font-size: 1.2rem;
+    font-size: 1rem;
 
-    margin-top: 0.8rem;
+    margin-top: 2rem;
+    
     
     
     
@@ -63,16 +66,17 @@ body,p,h2{
     border-radius: 5px;
     display: block;
     
-    position: absolute;
-    bottom: 0;
 }
+
 .incr, .dcr{
     color: #fff;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding:  0.1rem  0.6rem;
     border: none;
     border-radius: 7px;
+    
+    
 
 }
 .incr , .dcr, .add-before-1:hover{
@@ -82,18 +86,23 @@ body,p,h2{
 }
 
 
+
 .incr{
     background: orange;
     margin-right: 1rem;
+    
 }
 .dcr {
     
     background-color: red;
     padding: 0.2rem 0.8rem;
+
     
 }
 .btns {
     display: flex;
+    
+    
     
 }
 .amount-ordered{

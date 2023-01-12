@@ -49,13 +49,14 @@ function Item(props) {
       <p className ="item-name">{props.name}  </p>
       <p className="item-price">{naira}{props.price.toLocaleString('en-US')}</p>
       
-      
+      <div className="all-btns">
       {props.amountOrdered < 1 && <button className="add-before-1" onClick={incr}>ADD</button>}
+      
       <div className="btns">
       {props.amountOrdered<props.stock_left &&props.amountOrdered>0 && <button className="incr" onClick= {incr}>+</button>}
       {props.amountOrdered>0 &&<button className="dcr" onClick ={dcr}>-</button>}
+      </div> 
       </div>
-
     </div>
   )
 }
